@@ -8,12 +8,16 @@ var modelbinder = (function(){
 	            node = node.nextSibling;
 	        }
 		};
-		Backbone.view.prototype.render = function() {
+		Backbone.View.prototype.render = function() {
               
-              this.$el.html(this.template(this.model.toJSON()));
+              dust.render(this.template, this.model.attributes, function(err,out){
+                      
+              this.$el.html(out);
               this.modelbinder(this.$el[0],this.linkattribute);
               this.bindtoview();
                              
+          }.bind(this));
+                         
         
           return this;
     	};
