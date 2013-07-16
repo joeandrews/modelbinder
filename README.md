@@ -44,3 +44,7 @@ I intend to extend this list as and when I need more functionality.
 
 1.  Sort out event propogation on re-render.
 
+2.  Remove dust.js
+
+3. multi level model attribute binding
+
