@@ -3,7 +3,7 @@ ModelBinder
 
 A two way model binder for backbone.It binds dom elements to model attributes via the name and data attributes.
 
-## Edit ## : 
+## Edit: 
 
 This library currently uses dust.js templates to render the view. I will change this to make the render function template agnostic. It also uses some `JQuery`, i will remove this dependancy in due course.
 
@@ -33,7 +33,14 @@ The library currently only has provides 4 different types of bindings to html el
 
 I intend to extend this list as and when I need more functionality.
 
-### Binding to a model attribute ###
+### Binding to a model attribute
 
-  ```<div id="someid" class="someclass" name="attribute" data-type ="value">{initial value}</div>
   ```
+    <div id="someid" class="someclass" name="attribute" data-type ="value">{initial value}</div>
+  
+  ```
+  
+### TO DO :
+
+1.  Sort out event propogation on re-render.
+
