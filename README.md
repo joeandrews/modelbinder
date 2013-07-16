@@ -3,6 +3,9 @@ modelbinder
 
 A two way model binder for backbone. Binds dom elements to model attributes via the name and data attributes.
 
+*Edit : this library currently uses dust.js templates to render the view. I will change this to make the render function template agnostic. It also uses some JQuery, i will remove this dependancie in due course.
+
+Please leave comments etc and issues + pull requests, it would be cool to make a pollished version of this.
 Usage :
 
 This library extends backone.js and should be included after the main backbone.js source code as follows.
